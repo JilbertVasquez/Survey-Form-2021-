@@ -1,0 +1,217 @@
+<link rel="stylesheet" href="styles.css">
+<div class = "container">
+<header class = "header">
+    <h1 id = "title" class = "text-center">Desired Career Survey Form</h1>
+<p id = "description" class = "description text-center">Thank you for taking the time to answer this career survey.</p>
+    </header>
+<form id = "survey-form">
+    <div class = "form-group"> 
+        <label id = "name-label" for = "name">Name</label>
+        <input
+            type = "name"
+            name = "name"
+            id = "name"
+            class = "form-control"
+            placeholder = "Enter your name"
+            required />
+    </div>
+    <div class = "form-group">
+        <label id = "email-label" for = "email">Email</label>
+        <input
+            type = "email"
+            name = "email"
+            id = "email"
+            class = "form-control"
+            placeholder = "Enter your email"
+            required />
+    </div>
+    <div class = "form-group">
+        <label id = "number-label" for = "age">Age (optional)</label>
+        <input
+            type = "number"
+            name = "age"
+            id = "number"
+            class = "form-control"
+            placeholder = "Age"
+            min = "16" 
+            max = "99"
+            />
+    </div>
+    
+    <div class = "form-group">
+        <p>What is your desired career?</p>
+        <select id = "dropdown" class = "form-control" required>
+        <option disabled selected value> Select your desired career</option>
+        <option value = "Com-Engg">
+            Computer Engineering
+        </option>
+        <option value = "Soft-Engg">
+            Software Engineering
+        </option>
+        <option value = "Com-sci">
+            Computer Science
+        </option>
+        <option value = "Developer">
+            Full Stack Developer
+        </option>
+        <option value = "Programmer">
+            Programmer
+        </option>
+        <option value = "IT">
+            IT
+        </option>
+        <option value = "EE">
+            Electrical Engineering
+        </option>
+        <option value = "others">
+            Others
+        </option>
+        </select>
+    </div>
+    
+    <div class = "form-group">
+        <p>How long do you want to prepare yourself for your desired career?</p>
+        <label>
+        <input
+                type = "radio"
+                name = "years"
+                value = "1 year"
+                class = "input-radio"
+                checked
+                />1 year</label>
+        <label>
+        <input 
+                type = "radio"
+                name = "years"
+                value = "2 years"
+                class = "input-radio"
+                />2 years</label>
+        <label>
+        <input
+                type = "radio"
+                name = "years"
+                value = "3 years"
+                class = "input-radio"
+                />3 years</label>
+        <label>
+        <input
+                type = "radio"
+                name = "years"
+                value = "4 years"
+                class = "input-radio"
+                />4 years</label>
+        <label>
+        <input
+                type = "radio"
+                name = "years"
+                value = "5 years"
+                class = "input-radio"
+                />5 years or more</label>
+    </div>
+    
+    <div class = "form-group">
+        <p>How do you want to study?</p>
+        <select id = "dropdown" class = "form-control" required>
+        <option disable selected value>What kind of learning do you prefer?</option>
+        <option value = "online">Online learning</option>
+        <option value = "f2f">Face-to-Face learning</option>
+        <option value = "blended">Blended learning</option>
+        </select>
+    </div>
+    
+    <div class = "form-group">
+        <p>What are you interested in?
+        <span class = "clue">(Check all that apply)</span>
+        </p>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "agorithms"
+                class = "input-checkbox"
+                />Algorithms</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "programming"
+                class = "input-checkbox"
+                />Programming</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "coding"
+                class = "input-checkbox"
+                />Coding</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "hardware"
+                class = "input-checkbox"
+                />Hardware</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "software"
+                class = "input-checkbox"
+                />Software</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "website"
+                class = "input-checkbox"
+                />Website</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "apps"
+                class = "input-checkbox"
+                />Apps</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "System"
+                class = "input-checkbox"
+                />System</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "Network"
+                class = "input-checkbox"
+                />Network</label>
+        <label>
+        <input
+                type = "checkbox"
+                name = "interested"
+                value = "others"
+                class = "input-checkbox"
+                />Others</label>
+    </div>
+    
+    <div class = "form-group">
+        <p>Tell us something more why are you interested in technology:</p>
+        <textarea
+                id = "more"
+                name = "more"
+                class = "input-textarea"
+                placeholder = "Enter text here..."></textarea>
+    </div>
+    
+    <div class = "form-group">
+        <button 
+                id = "submit" 
+                type = "submit" 
+                class = "submit-button">
+        Submit
+        </button>
+    </div>
+    </form>
+    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+</div>
